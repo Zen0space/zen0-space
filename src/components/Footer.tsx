@@ -1,12 +1,12 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-import Container from './styled/Container';
-import { FaGithub, FaLinkedin, FaTwitter, FaHeart } from 'react-icons/fa';
+import React from "react";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
+import Container from "./styled/Container";
+import { FaGithub, FaLinkedin, FaTwitter, FaHeart } from "react-icons/fa";
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
-  
+
   return (
     <StyledFooter>
       <Container>
@@ -33,18 +33,33 @@ const Footer: React.FC = () => {
             </FooterNavItem>
           </FooterNav>
           <SocialLinks>
-            <SocialLink href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <SocialLink
+              href="https://github.com/Zen0space"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaGithub />
             </SocialLink>
-            <SocialLink href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <SocialLink
+              href="https://www.linkedin.com/in/khairul-anuar-aliasak-2ab23b300/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaLinkedin />
             </SocialLink>
-            <SocialLink href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+            <SocialLink
+              href="https://x.com/zen0space"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaTwitter />
             </SocialLink>
           </SocialLinks>
           <Copyright>
-            © {currentYear} Khairul Anuar. All rights reserved. Designed with <HeartIcon><FaHeart /></HeartIcon>
+            © {currentYear} Khairul Anuar. All rights reserved. Designed with{" "}
+            <HeartIcon>
+              <FaHeart />
+            </HeartIcon>
           </Copyright>
         </FooterContent>
       </Container>
@@ -53,9 +68,9 @@ const Footer: React.FC = () => {
 };
 
 const StyledFooter = styled.footer`
-  background-color: ${props => props.theme.colors.dark};
-  color: ${props => props.theme.colors.light};
-  padding: ${props => props.theme.spacing.xl} 0;
+  background-color: ${(props) => props.theme.colors.dark};
+  color: ${(props) => props.theme.colors.light};
+  padding: ${(props) => props.theme.spacing.xl} 0;
 `;
 
 const FooterContent = styled.div`
@@ -65,22 +80,22 @@ const FooterContent = styled.div`
 `;
 
 const FooterLogo = styled.div`
-  font-size: ${props => props.theme.fontSizes.large};
+  font-size: ${(props) => props.theme.fontSizes.large};
   font-weight: 700;
-  font-family: ${props => props.theme.fonts.heading};
-  color: ${props => props.theme.colors.primary};
-  margin-bottom: ${props => props.theme.spacing.lg};
+  font-family: ${(props) => props.theme.fonts.heading};
+  color: ${(props) => props.theme.colors.primary};
+  margin-bottom: ${(props) => props.theme.spacing.lg};
 `;
 
 const FooterNav = styled.ul`
   display: flex;
   list-style: none;
-  gap: ${props => props.theme.spacing.lg};
-  margin-bottom: ${props => props.theme.spacing.lg};
-  
-  @media (max-width: ${props => props.theme.breakpoints.mobile}) {
+  gap: ${(props) => props.theme.spacing.lg};
+  margin-bottom: ${(props) => props.theme.spacing.lg};
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
     flex-direction: column;
-    gap: ${props => props.theme.spacing.sm};
+    gap: ${(props) => props.theme.spacing.sm};
     align-items: center;
   }
 `;
@@ -88,40 +103,40 @@ const FooterNav = styled.ul`
 const FooterNavItem = styled.li``;
 
 const FooterNavLink = styled(Link)`
-  color: ${props => props.theme.colors.light};
-  transition: color ${props => props.theme.transitions.fast};
-  
+  color: ${(props) => props.theme.colors.light};
+  transition: color ${(props) => props.theme.transitions.fast};
+
   &:hover {
-    color: ${props => props.theme.colors.primary};
+    color: ${(props) => props.theme.colors.primary};
   }
 `;
 
 const SocialLinks = styled.div`
   display: flex;
-  gap: ${props => props.theme.spacing.md};
-  margin-bottom: ${props => props.theme.spacing.lg};
+  gap: ${(props) => props.theme.spacing.md};
+  margin-bottom: ${(props) => props.theme.spacing.lg};
 `;
 
 const SocialLink = styled.a`
   font-size: 1.5rem;
-  color: ${props => props.theme.colors.light};
-  transition: color ${props => props.theme.transitions.fast};
-  
+  color: ${(props) => props.theme.colors.light};
+  transition: color ${(props) => props.theme.transitions.fast};
+
   &:hover {
-    color: ${props => props.theme.colors.primary};
+    color: ${(props) => props.theme.colors.primary};
   }
 `;
 
 const Copyright = styled.div`
   display: flex;
   align-items: center;
-  font-size: ${props => props.theme.fontSizes.small};
-  color: ${props => props.theme.colors.lightGray};
+  font-size: ${(props) => props.theme.fontSizes.small};
+  color: ${(props) => props.theme.colors.lightGray};
 `;
 
 const HeartIcon = styled.span`
-  color: ${props => props.theme.colors.primary};
-  margin: 0 ${props => props.theme.spacing.xs};
+  color: ${(props) => props.theme.colors.primary};
+  margin: 0 ${(props) => props.theme.spacing.xs};
   display: inline-flex;
   align-items: center;
 `;

@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
-import Container from './styled/Container';
-import Button from './styled/Button';
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import React from "react";
+import styled from "styled-components";
+import Container from "./styled/Container";
+import Button from "./styled/Button";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Hero: React.FC = () => {
   return (
@@ -15,26 +15,46 @@ const Hero: React.FC = () => {
             <Title>Full Stack Developer</Title>
             <Description>
               I build exceptional digital experiences with modern technologies.
-              Passionate about creating clean, efficient, and user-friendly applications from Malaysia.
+              Passionate about creating clean, efficient, and user-friendly
+              applications from Malaysia.
             </Description>
             <ButtonGroup>
-              <Button $primary $large>View My Work</Button>
-              <Button $secondary $large>Contact Me</Button>
+              <Button $primary $large as="a" href="#projects">
+                View My Work
+              </Button>
+              <Button $secondary $large as="a" href="#contact">
+                Contact Me
+              </Button>
             </ButtonGroup>
             <SocialLinks>
-              <SocialLink href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <SocialLink
+                href="https://github.com/Zen0space"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaGithub />
               </SocialLink>
-              <SocialLink href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <SocialLink
+                href="https://www.linkedin.com/in/khairul-anuar-aliasak-2ab23b300/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaLinkedin />
               </SocialLink>
-              <SocialLink href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <SocialLink
+                href="https://x.com/zen0space"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaTwitter />
               </SocialLink>
             </SocialLinks>
           </TextContent>
           <ImageContainer>
-            <ProfileImage src="/images/Code Side.JPG" alt="Khairul Anuar - Full Stack Developer" />
+            <ProfileImage
+              src="/images/Code Side.JPG"
+              alt="Khairul Anuar - Full Stack Developer"
+            />
           </ImageContainer>
         </HeroContent>
       </Container>
@@ -54,8 +74,8 @@ const HeroContent = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
-  @media (max-width: ${props => props.theme.breakpoints.laptop}) {
+
+  @media (max-width: ${(props) => props.theme.breakpoints.laptop}) {
     flex-direction: column-reverse;
     text-align: center;
   }
@@ -63,50 +83,50 @@ const HeroContent = styled.div`
 
 const TextContent = styled.div`
   flex: 1;
-  margin-right: ${props => props.theme.spacing.xxl};
-  
-  @media (max-width: ${props => props.theme.breakpoints.laptop}) {
+  margin-right: ${(props) => props.theme.spacing.xxl};
+
+  @media (max-width: ${(props) => props.theme.breakpoints.laptop}) {
     margin-right: 0;
-    margin-top: ${props => props.theme.spacing.xxl};
+    margin-top: ${(props) => props.theme.spacing.xxl};
   }
 `;
 
 const Greeting = styled.p`
-  font-size: ${props => props.theme.fontSizes.medium};
-  color: ${props => props.theme.colors.textLight};
-  margin-bottom: ${props => props.theme.spacing.sm};
+  font-size: ${(props) => props.theme.fontSizes.medium};
+  color: ${(props) => props.theme.colors.textLight};
+  margin-bottom: ${(props) => props.theme.spacing.sm};
 `;
 
 const Name = styled.h1`
   font-size: 4rem;
   font-weight: 800;
-  color: ${props => props.theme.colors.primary};
-  margin-bottom: ${props => props.theme.spacing.xs};
+  color: ${(props) => props.theme.colors.primary};
+  margin-bottom: ${(props) => props.theme.spacing.xs};
   line-height: 1.1;
-  
-  @media (max-width: ${props => props.theme.breakpoints.mobile}) {
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
     font-size: 3rem;
   }
 `;
 
 const Title = styled.h2`
-  font-size: ${props => props.theme.fontSizes.xlarge};
+  font-size: ${(props) => props.theme.fontSizes.xlarge};
   font-weight: 600;
-  color: ${props => props.theme.colors.text};
-  margin-bottom: ${props => props.theme.spacing.md};
-  
-  @media (max-width: ${props => props.theme.breakpoints.mobile}) {
-    font-size: ${props => props.theme.fontSizes.large};
+  color: ${(props) => props.theme.colors.text};
+  margin-bottom: ${(props) => props.theme.spacing.md};
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
+    font-size: ${(props) => props.theme.fontSizes.large};
   }
 `;
 
 const Description = styled.p`
-  font-size: ${props => props.theme.fontSizes.medium};
-  color: ${props => props.theme.colors.textLight};
-  margin-bottom: ${props => props.theme.spacing.lg};
+  font-size: ${(props) => props.theme.fontSizes.medium};
+  color: ${(props) => props.theme.colors.textLight};
+  margin-bottom: ${(props) => props.theme.spacing.lg};
   max-width: 600px;
-  
-  @media (max-width: ${props => props.theme.breakpoints.laptop}) {
+
+  @media (max-width: ${(props) => props.theme.breakpoints.laptop}) {
     margin-left: auto;
     margin-right: auto;
   }
@@ -114,35 +134,35 @@ const Description = styled.p`
 
 const ButtonGroup = styled.div`
   display: flex;
-  gap: ${props => props.theme.spacing.md};
-  margin-bottom: ${props => props.theme.spacing.lg};
-  
-  @media (max-width: ${props => props.theme.breakpoints.mobile}) {
+  gap: ${(props) => props.theme.spacing.md};
+  margin-bottom: ${(props) => props.theme.spacing.lg};
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
     flex-direction: column;
-    gap: ${props => props.theme.spacing.sm};
+    gap: ${(props) => props.theme.spacing.sm};
   }
-  
-  @media (max-width: ${props => props.theme.breakpoints.laptop}) {
+
+  @media (max-width: ${(props) => props.theme.breakpoints.laptop}) {
     justify-content: center;
   }
 `;
 
 const SocialLinks = styled.div`
   display: flex;
-  gap: ${props => props.theme.spacing.md};
-  
-  @media (max-width: ${props => props.theme.breakpoints.laptop}) {
+  gap: ${(props) => props.theme.spacing.md};
+
+  @media (max-width: ${(props) => props.theme.breakpoints.laptop}) {
     justify-content: center;
   }
 `;
 
 const SocialLink = styled.a`
   font-size: 1.5rem;
-  color: ${props => props.theme.colors.textLight};
-  transition: color ${props => props.theme.transitions.fast};
-  
+  color: ${(props) => props.theme.colors.textLight};
+  transition: color ${(props) => props.theme.transitions.fast};
+
   &:hover {
-    color: ${props => props.theme.colors.primary};
+    color: ${(props) => props.theme.colors.primary};
   }
 `;
 
@@ -150,8 +170,8 @@ const ImageContainer = styled.div`
   flex: 1;
   display: flex;
   justify-content: flex-end;
-  
-  @media (max-width: ${props => props.theme.breakpoints.laptop}) {
+
+  @media (max-width: ${(props) => props.theme.breakpoints.laptop}) {
     justify-content: center;
   }
 `;
@@ -161,10 +181,10 @@ const ProfileImage = styled.img`
   height: 350px;
   border-radius: 50%;
   object-fit: cover;
-  border: 5px solid ${props => props.theme.colors.primary};
-  box-shadow: ${props => props.theme.shadows.medium};
-  
-  @media (max-width: ${props => props.theme.breakpoints.mobile}) {
+  border: 5px solid ${(props) => props.theme.colors.primary};
+  box-shadow: ${(props) => props.theme.shadows.medium};
+
+  @media (max-width: ${(props) => props.theme.breakpoints.mobile}) {
     width: 250px;
     height: 250px;
   }
