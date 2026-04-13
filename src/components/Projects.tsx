@@ -18,36 +18,16 @@ interface ProjectItem {
 const projects: ProjectItem[] = [
   {
     id: 1,
-    title: "Lynkify",
+    title: "Kalori API",
     description:
-      "A beautiful, customizable link-in-bio page solution that transforms your social media presence. Share all your content, track engagement, and grow your audience from one powerful link.",
-    image: "/images/lynkify-me.png",
-    tags: ["React", "Link-in-Bio", "Social Media", "Analytics"],
+      "Malaysian Food Nutrition API providing comprehensive nutritional data for Malaysian foods. Build health apps, track calories, or integrate food data into your projects with this free REST API.",
+    image: "/images/kalori-api.png",
+    tags: ["API", "Health Data", "Nutrition", "Malaysian Food"],
     githubLink: "",
-    liveLink: "https://lynkify.me/",
+    liveLink: "https://kalori-api.my",
   },
   {
     id: 2,
-    title: "Kalori Makanan Malaysia",
-    description:
-      "Malaysia's most trusted food calorie API service, providing detailed nutritional data for 750+ Malaysian and international foods. Official data by KKM for accurate health information.",
-    image: "/images/kalori-me.png",
-    tags: ["API", "Health Data", "Nutrition", "Malaysian Food"],
-    githubLink: "",
-    liveLink: "https://kalori-me.senitera.com/",
-  },
-  {
-    id: 3,
-    title: "Flow by zen0",
-    description:
-      "A powerful form builder application that allows users to create, customize, and deploy forms with ease. Perfect for surveys, feedback collection, and data gathering.",
-    image: "/images/flow-zen0.png",
-    tags: ["React", "Form Builder", "UI/UX", "Data Collection"],
-    githubLink: "",
-    liveLink: "https://flow.zen0.space",
-  },
-  {
-    id: 4,
     title: "Todo Web App",
     description:
       "An open-source todo application built for productivity and collaboration. Features include task management, categories, and priority settings. Contributions welcome!",
@@ -57,17 +37,7 @@ const projects: ProjectItem[] = [
     liveLink: "https://todo.zen0.space",
   },
   {
-    id: 5,
-    title: "Payvo",
-    description:
-      "An easy-to-use invoicing web application designed for freelancers and small businesses. Create, manage, and send professional invoices with a clean, intuitive interface.",
-    image: "/images/payvo-zen0.png",
-    tags: ["React", "TypeScript", "Styled Components", "Invoice Management"],
-    githubLink: "",
-    liveLink: "https://payvo.zen0.space",
-  },
-  {
-    id: 6,
+    id: 3,
     title: "Oral Hous",
     description:
       "A comprehensive e-commerce platform for dental and oral care products. Features product catalog, shopping cart, and secure payment processing for dental supplies and accessories.",

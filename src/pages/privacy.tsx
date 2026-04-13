@@ -155,7 +155,7 @@ const Privacy: React.FC = () => {
               <BlockText>
                 <p>If you have any questions about this Privacy Policy, please contact us:</p>
                 <ul>
-                  <li>By email: tartnenas_kai@outlook.com</li>
+                  <li>By email: khairulanuarwork9132@gmail.com</li>
                   <li>By phone: +6011-1541 5268</li>
                 </ul>
               </BlockText>

@@ -74,7 +74,9 @@ const About: React.FC = () => {
                 </TechItem>
               </TechStackGrid>
             </SkillsContainer>
-            <Button $primary>Download Resume</Button>
+            <a href="/resume/KhairulAnuarAliasak_HiredlyResume.pdf" download>
+              <Button $primary>Download Resume</Button>
+            </a>
           </AboutText>
           <AboutImageWrapper>
             <AboutImage src="/images/Code Back.JPG" alt="Khairul Anuar working on code" />

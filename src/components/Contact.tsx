@@ -25,7 +25,7 @@ const Contact: React.FC = () => {
                 </ContactIcon>
                 <ContactItemText>
                   <ContactItemLabel>Email</ContactItemLabel>
-                  <ContactItemValue>kairul@zen0.space</ContactItemValue>
+                  <ContactItemValue>khairulanuarwork9132@gmail.com</ContactItemValue>
                 </ContactItemText>
               </ContactItem>
               <ContactItem>
